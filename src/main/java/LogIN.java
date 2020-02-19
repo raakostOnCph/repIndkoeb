@@ -28,14 +28,18 @@ public class LogIN extends HttpServlet {
 
         if ( ((Set<String>) servletContext.getAttribute("brugere") ).contains(navn) ){
 
+            session.setAttribute("navn",navn);
 
             //todo brugeren findes allerede rede , og vi skal gå til en indkøbslistesiden.
+            request.getRequestDispatcher("WEB-INF/Listen.jsp").forward(request,response);
+
 
         }
             else {
 
+                request.setAttribute("besked", "du skal oprette en profil først");
                 //todo brugeren findes ikke og skal oprettes dvs. vi skal gå til opret brugere side.
-
+                request.getRequestDispatcher("WEB-INF/OpretBruger.jsp").forward(request,response);
 
 
         }
