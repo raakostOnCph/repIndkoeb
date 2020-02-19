@@ -14,5 +14,15 @@
 
 velkomme til din online huskeliste
 
+
+<form action="LogIN", method="post">
+    <label for="fname">Skriv dit navn for logge ind:</label><br>
+    <input type="text" id="fname" name="navn" ><br>
+
+    <input type="submit" value="log ind">
+</form>
+
+
+
 </body>
 </html>
