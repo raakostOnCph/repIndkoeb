@@ -8,9 +8,11 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Så er vi igang</title>
 </head>
 <body>
+
+velkomme til din online huskeliste
 
 </body>
 </html>
